@@ -34,6 +34,7 @@ class DnsClient:
                 if record['RR' ] == RR and record['Type'] == record_type:
                     return record
             return None
+        return None
     
     def update_record(self, record_id, record_type, RR, value):
         update_domain_record_req = UpdateDomainRecordRequest()
